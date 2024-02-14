@@ -1,0 +1,98 @@
+    *{
+            margin: 0;
+            transition: 0.5s;
+            
+              font-family: "Quicksand", sans-serif;
+              font-optical-sizing: auto;
+         
+              font-style: normal;
+            
+          }
+            #top-panel{
+                background-image: url(images/nav.PNG);
+                height: 113px;
+                width: 100%;
+                background-size: cover;
+                margin-bottom: 20px;
+            }
+            .vertical-menu {
+            
+              margin-right: 10%;
+                margin-left: 10%;
+                width: 80%;
+            }
+           
+            .vertical-menu ,.first{
+              font-size: 30px;
+              
+            }
+            
+            .vertical-menu a {
+              background-color: #ffffff;
+              color: black;
+              display: block;
+              padding: 12px;
+              margin-bottom: 5px;
+              text-decoration: none;
+            }
+            
+         
+            #items{
+                height: 10%;
+                
+            }
+            .collapsible {
+            background-color:rgb(238, 77, 45);
+            color: white;
+            cursor: pointer;
+            font-size: 100px;
+            height: 70px;
+            width: 80%;
+            border-radius: 20px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            margin-bottom: 15px;
+            margin-right: 10%;
+            margin-left: 10%;
+          }
+
+          .active, .collapsible:hover {
+            background-color:rgb(209, 66, 37);
+          }
+          h1{
+            font-size:30px;
+       
+            margin-left: 20px;
+          }
+          .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+         
+            background-color: #ffffff;
+          }
+          #answer{
+            margin-left: 83%;
+            font-size: 20px;
+          }
+          #dectotal{
+            margin-left: 83%;
+            font-size: 20px;
+          }
+          #jantotal{
+            margin-left: 83%;
+            font-size: 20px;
+          }
+          #febtotal{
+            margin-left: 83%;
+            font-size: 20px;
+          }
+          h5{
+            margin-left: 10%;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: rgb(238, 77, 45);
+
+          }

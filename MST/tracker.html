@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Monthly Expenses Tracker</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+<div id="top-panel">
+ 
+</div>
+<div>
+<h5>Monthly Expenses Tracker<h5>
+</div>
+<button type="button" class="collapsible"><h1>November 2023 </h1><label id="answer"> </label></button>
+<div class="content">
+<div class="vertical-menu">
+  <a href="#"> <img src="images/keyboard.PNG" id="items"><label> ₱ </label><label id="first"></label></a>
+  <a href="#"> <img src="images/mouse.PNG" id="items"><label> ₱ </label><label id="second"></label></a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+  
+</div>
+</div>
+<div>
+<button type="button" class="collapsible"><h1>December 2023 </h1><label id="dectotal"> </label></button>
+<div class="content">
+<div class="vertical-menu">
+  <a href="#"> <img src="images/keyboard.PNG" id="items"><label> ₱ </label><label id="dec1"></label></a>
+  <a href="#"> <img src="images/mouse.PNG" id="items"><label> ₱ </label><label id="dec2"></label></a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+  
+</div>
+</div>
+</div>
+<div>
+  <button type="button" class="collapsible"><h1>January 2024 </h1><label id="jantotal"> </label></button>
+  <div class="content">
+  <div class="vertical-menu">
+    <a href="#"> <img src="images/keyboard.PNG" id="items"><label> ₱ </label><label id="jan1"></label></a>
+    <a href="#"> <img src="images/mouse.PNG" id="items"><label> ₱ </label><label id="jan2"></label></a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    
+  </div>
+  </div>
+  </div>
+  <div>
+    <button type="button" class="collapsible"><h1>February 2024</h1><label id="febtotal"> </label></button>
+    <div class="content">
+    <div class="vertical-menu">
+      <a href="#"> <img src="images/keyboard.PNG" id="items"><label> ₱ </label><label id="feb1"></label></a>
+      <a href="#"> <img src="images/mouse.PNG" id="items"><label> ₱ </label><label id="feb2"></label></a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      
+    </div>
+    </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script>
+        
+        {
+          var numOne, numTwo, sum,total,dec1,dec2,decsum,dectotal,jan1,jan2,jansum,jantotal,feb1,feb2,febtotal,febsum;
+          numOne = 669;
+          numTwo =  99 ;
+          dec1 = 1500;
+          dec2 = 500;
+          jan1 = 300;
+          jan2 = 800;
+          feb1 = 90;
+          feb2 = 700;
+       
+          sum =  numOne + numTwo;
+          total =  "Total Amount: "+ "₱" + sum;
+          decsum =  dec1 + dec2;
+          dectotal =  "Total Amount: "+ "₱" + decsum;
+          jansum =  jan1 + jan2;
+          jantotal =  "Total Amount: "+ "₱" + jansum;
+          febsum =  feb1 + feb2;
+          febtotal =  "Total Amount: "+ "₱" + febsum;
+
+          document.getElementById("first").innerHTML = numOne;
+          document.getElementById("second").innerHTML = numTwo;
+          document.getElementById("answer").innerHTML = total;
+          document.getElementById("dec1").innerHTML = dec1;
+          document.getElementById("dec2").innerHTML = dec2;
+          document.getElementById("dectotal").innerHTML = dectotal;
+          document.getElementById("jan1").innerHTML = jan1;
+          document.getElementById("jan1").innerHTML = jan2;
+          document.getElementById("jantotal").innerHTML = jantotal;
+          document.getElementById("feb1").innerHTML = feb1;
+          document.getElementById("feb2").innerHTML = feb2;
+          document.getElementById("febtotal").innerHTML = febtotal;
+        
+        }
+        </script>
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+          </script>
+    </body>
+</html>
